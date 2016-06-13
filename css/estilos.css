@@ -1,0 +1,25 @@
+body {
+  background: peru;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portada {
+  display: flex;
+}
+
+.col1 {
+  width: 70%;
+}
+
+.col2 {
+  width: 30%;
+}
