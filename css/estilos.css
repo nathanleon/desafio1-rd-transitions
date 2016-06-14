@@ -33,10 +33,19 @@ header {
   width: 30%;
 }
 
+.banner {
+  position: relative;
+  left: 0;
+  top: 0;
+  transition: .5s;
+
+}
 
 /*media query*/
 @media screen and (max-width:768px){
-  body{
-    background: red;
+  .banner {
+    left: 30%;
+    top: 100px;
+
   }
 }
