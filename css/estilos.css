@@ -24,7 +24,11 @@ header {
 }
 
 .col2 {
+
   width: 30%;
+  position: relative;
+  top: 0;
+  transition: .5s;
 }
 .logo {
   width: 40%;
@@ -34,18 +38,24 @@ header {
 }
 
 .banner {
+  background: lightgrey;
+  color: black;
   position: relative;
   left: 0;
   top: 0;
   transition: .5s;
-
+  height: 50px;
 }
 
 /*media query*/
 @media screen and (max-width:768px){
   .banner {
     left: 30%;
-    top: 100px;
+    top: 50px;
 
+  }
+
+  .col2 {
+    top: 50px;
   }
 }
