@@ -10,6 +10,9 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  background: #273b47;
+  color: white;
+  align-items: center; /*alinea los items vesticalmente*/
 }
 
 .portada {
@@ -22,4 +25,18 @@ header {
 
 .col2 {
   width: 30%;
+}
+.logo {
+  width: 40%;
+}
+.menu, .banner {
+  width: 30%;
+}
+
+
+/*media query*/
+@media screen and (max-width:768px){
+  body{
+    background: red;
+  }
 }
