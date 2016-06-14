@@ -13,6 +13,7 @@ header {
   background: #273b47;
   color: white;
   align-items: center; /*alinea los items vesticalmente*/
+  position: relative;
 }
 
 .portada {
@@ -37,11 +38,21 @@ header {
   width: 30%;
 }
 
+.menu {
+  position: absolute;
+  left: 70%;
+  transition: .5s;
+  height: 50px;
+  top: 0;
+  background: purple;
+
+
+}
 .banner {
   background: lightgrey;
   color: black;
   position: relative;
-  left: 0;
+  left: -30%;
   top: 0;
   transition: .5s;
   height: 50px;
@@ -50,12 +61,20 @@ header {
 /*media query*/
 @media screen and (max-width:768px){
   .banner {
-    left: 30%;
+    left: 0;
     top: 50px;
 
   }
 
   .col2 {
     top: 50px;
+  }
+}
+
+/*a pantallas menores a 480px*/
+@media screen and (max-width:480px){
+  .menu {
+    top: 50px;
+    left: 0;
   }
 }
